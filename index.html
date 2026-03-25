@@ -1,80 +1,52 @@
-<h1 style="color:white;">MRIGEN WORKING 🔥</h1>
-<!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="style.css>
-<meta charset="UTF-8">
-<title>MRIGEN MARVEL</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial;
-    background: black;
-    color: white;
-    overflow-x: hidden;
-}
-
-/* Top Title */
-.title {
-    font-size: 60px;
-    text-align: center;
-    color: red;
-    font-weight: bold;
-    margin: 20px;
-}
-
-/* Horizontal Scroll Section */
-.container {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    height: 80vh;
-}
-
-.card {
-    min-width: 300px;
-    margin: 20px;
-    background: #111;
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.1);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.hero-name {
-    font-s…
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MRIGEN MARVEL</title>
 
-<!-- ✅ FIXED CSS PATH -->
-<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<h1 style="color:red; text-align:center;">MRIGEN 🔥</h1>
+<h1 class="title">MRIGEN</h1>
 
 <div class="container">
 
-    <div class="card">
+    <div class="card" onclick="openHero('ironman.html')">
         <img src="https://i.imgur.com/8RKXAIV.jpg">
         <div class="hero-name">IRON MAN</div>
     </div>
 
+    <div class="card" onclick="openHero('thor.html')">
+        <img src="https://i.imgur.com/Qr71crq.jpg">
+        <div class="hero-name">THOR</div>
+    </div>
+
+    <div class="card" onclick="openHero('spiderman.html')">
+        <img src="https://i.imgur.com/9XntP8R.jpg">
+        <div class="hero-name">SPIDER-MAN</div>
+    </div>
+
+    <div class="card" onclick="openHero('blackpanther.html')">
+        <img src="https://i.imgur.com/Ky6G1dZ.jpg">
+        <div class="hero-name">BLACK PANTHER</div>
+    </div>
+
+    <div class="card" onclick="openHero('captain.html')">
+        <img src="https://i.imgur.com/c3c6KJk.jpg">
+        <div class="hero-name">CAPTAIN AMERICA</div>
+    </div>
+
 </div>
+
+<script>
+function openHero(page){
+    window.location.href = page;
+}
+</script>
 
 </body>
 </html>
