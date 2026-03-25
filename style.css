@@ -47,3 +47,29 @@ body {
     overflow: hidden;
     cursor: pointer;
     scroll-s…
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MRIGEN MARVEL</title>
+
+<!-- ✅ FIXED CSS PATH -->
+<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+<h1 style="color:red; text-align:center;">MRIGEN 🔥</h1>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://i.imgur.com/8RKXAIV.jpg">
+        <div class="hero-name">IRON MAN</div>
+    </div>
+
+</div>
+
+</body>
+</html>
