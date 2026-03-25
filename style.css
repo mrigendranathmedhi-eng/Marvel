@@ -1,75 +1,57 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
     background: black;
     font-family: Arial, sans-serif;
     color: white;
-    overflow-x: hidden;
 }
 
-/* TITLE */
+/* Title */
 .title {
-    font-size: 70px;
     text-align: center;
+    font-size: 60px;
     color: red;
-    font-weight: 900;
-    letter-spacing: 6px;
     margin: 20px 0;
-    text-shadow: 0 0 25px red;
+    letter-spacing: 5px;
 }
 
-/* SCROLL CONTAINER */
+/* Container */
 .container {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 25px;
-    padding: 30px;
+    gap: 20px;
+    padding: 20px;
 }
 
-/* HIDE SCROLLBAR */
-.container::-webkit-scrollbar {
-    display: none;
-}
-
-/* CARD */
+/* Card */
 .card {
-    min-width: 260px;
-    height: 400px;
+    min-width: 250px;
+    height: 350px;
     background: #111;
-    border-radius: 20px;
+    border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
-    scroll-s…
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>MRIGEN MARVEL</title>
+    transition: 0.3s;
+}
 
-<!-- ✅ FIXED CSS PATH -->
-<link rel="stylesheet" href="./style.css">
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px red;
+}
 
-</head>
+/* Image */
+.card img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
 
-<body>
-
-<h1 style="color:red; text-align:center;">MRIGEN 🔥</h1>
-
-<div class="container">
-
-    <div class="card">
-        <img src="https://i.imgur.com/8RKXAIV.jpg">
-        <div class="hero-name">IRON MAN</div>
-    </div>
-
-</div>
-
-</body>
-</html>
+/* Name */
+.hero-name {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
